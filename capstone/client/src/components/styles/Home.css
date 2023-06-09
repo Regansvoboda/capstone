@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.back {
+    background-image: url('img2.jpeg');
+    background-size: 100% auto;
+}
+
+.header .back h1 {
+    font-size: 100px;
+}
+
+.header .back h2 {
+    font-size: 30px;
+    margin-top: 500px;
+}
+
+/* #EBCCB6 */
+
+.header {
+    background-color: #C8DADD;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #000
+}
+
+.hammer img,
+.white img,
+/* .whale img, */
+.tiger img,
+.gsea img,
+.oturt img,
+/* .pwhale img,  */
+.dolphin img {
+    width: 500px;
+    height:300px;
+    border-radius: 50%;
+    border-width: thick;
+    mix-blend-mode: multiply;
+    background-color: #F5E1BA;
+}
+
+.hammer img,
+.gsea img,
+.dolphin img,
+.white img {
+    float: left; padding: 0 20px 20px 0;
+}
+
+/* .sharks {
+    color: blueviolet;
+} */
+/* 
+.hammer,
+.white,
+.gsea,
+.dolphin {
+    text-align: left;
+    margin-right: 600px;
+    font-size: 22px;
+}
+
+.tiger,
+.whale,
+.oturt,
+.pwhale {
+    text-align: right;
+    margin-left: 600px;
+    font-size: 22px;
+} */
+
+.tiger img,
+.oturt img {
+    float: right; padding: 0 20px 20px 0;
+    background-color: #F5E1BA;
+    border-radius: 50%;
+}
+
+.hammer,
+.white,
+.whale,
+.tiger,
+.gsea,
+.oturt,
+.dolphin,
+.pwhale {
+    padding-bottom: 400px;
+}
+
+.whale img,
+.pwhale img {
+    float: right; padding: 0 20px 20px 0;
+    width: 400px;
+    height:200px;
+    mix-blend-mode: multiply;
+    background-color: #F5E1BA;
+
+}
+
+.tiger h3,
+.oturt h3,
+.whale h3,
+.pwhale h3 {
+    text-align: left;
+    margin-left: 50px;
+    font-size: 50px;
+}
+
+.hammer h3,
+.white h3,
+.gsea h3,
+.dolphin h3 {
+    text-align: right;
+    font-size: 50px;
+}
+
+.header p {
+    font-size: 20px;
+}

@@ -1,0 +1,106 @@
+.header-container {
+    display: flex;
+    justify-content:right;
+    background-color: #EBCCB6;
+
+  }
+  
+  .header-menu {
+    display: flex;
+    list-style: none;
+    margin-top: 5;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  .header-menu li a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .header-menu li a:hover {
+    background-color: #F0F8FF;
+  }
+  
+  .header-menu li a.active {
+    background-color: #fff;
+  }
+
+  .outer-circle {
+    /* 	design the circle */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 0 #aaa;
+}
+
+.blue-scanner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(#F0F8FF, #C8DADD);
+}
+.blue-scanner {
+    /* write code so far here */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.outer-circle {
+    /* write code so far here */
+
+    position: relative;
+    margin-top: -70px;
+    margin-left: 50px;
+}
+.outer-circle::before,
+.outer-circle::after {
+
+    /* must have! Pseudo-elements don't appear if the content property is not declared */
+    content: "";
+
+    /* set dimensions equal to their parent */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* make it a circle */;
+    border: 1px solid #eee;
+        
+    /* perfectly overlap them with their parent */
+    position: absolute;
+}
+.blue-scanner {
+    /* write code so far here */
+
+    animation: scan 4s infinite linear;
+}
+
+@keyframes scan {
+    to {
+	transform: rotate(1turn);
+    }
+}
+
+.outer-circle::before,
+.outer-circle::after {
+    /* write code so far here */
+
+    animation: ripple 3s infinite linear;
+}
+
+@keyframes ripple {
+    to {
+	transform: scale(2);
+    }
+}
+
+.title {
+    padding-right: 400px;
+    font-size: 30px;
+}
+
+
